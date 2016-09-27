@@ -1,0 +1,146 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adventure Expeditions</title>
+    <link rel="shortcut icon" href="favicon3.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main3.css">
+    <link rel="stylesheet" href="styles/national.css">
+    <link rel="stylesheet" href="styles/gearlist.css">
+    <link rel="stylesheet" href="styles/aboutus.css">
+    <link rel="stylesheet" href="styles/employment.css">
+    <link rel="stylesheet" href="styles/summary.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <link rel="stylesheet" href="styles/lightbox.min.css">
+    <link rel="stylesheet" href="styles/lightbox.css">
+
+
+
+
+</head>
+
+
+<body>
+    <header>
+        <link rel="stylesheet" type="text/css" href="styles/main3.css">
+        <h1>Adventure Expeditions</h1>
+        <h2><i>The Outdoor Adventure Starts Here!</i></h2>
+        <blockquote><b>"It is not the mountain we conquer but ourselves."</b></blockquote>
+        <p>--Edmund Hillary (Mountaineer)</p>
+    </header>
+
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html" class="current">Home</a></li>
+            <li><a href="National_Parks.html">National Parks</a></li>
+            <li><a href="GearList.html">Essential Gear</a></li>
+            <li><a href="Travel_Agency.html">Travel Agency</a></li>
+            <li>
+                <a href="aboutus.html">About Us</a>
+                <ul>
+                    <li><a href="#">Who We Are</a></li>
+                    <li><a href="#">Sponsors</a></li>
+                    <li><a href="Employment.html">Employment</a></li>
+                    <li><a href="#">Contact Information</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Our Mission</h2>
+
+            <p>
+                The biggest problem beginners have when looking to explore backpacking and hiking is knowing where to start.
+                The mission Adventure Expeditions has is to provide a website that explores what it takes to backpack on an expedition
+                successfully. We provide important suggestions on how to plan for an expedition, what types of equipment to include
+                in your packing, and information on popular expedition locations.
+            </p>
+
+            <ul id="links">
+                <li>
+                    <a href="National_Parks.html" class="new_window">National Parks</a>
+                    <title ="Takes you to the National Parks page.">
+                </li> <!--write hover code here-->
+                <li>
+                    <a href="GearList.html" class="new_window">Equipment Checklist</a>
+                    <title ="Takes you to the Essential Gear page.">
+                </li>
+            </ul>
+            <div id="lightBoxBg"></div>
+            <div id="lightBox">
+                <a href="images/mountainbike.jpg"><img src="images/mountainbike.jpg" alt="A mountain bike" width="175" height="118"></a>
+                <a href="images/hiking.jpg"><img src="images/hiking.jpg" alt="Two hikers" width="175" height="118"><br></a>
+                <a href="images/photographer.jpg"><img src="images/photographer.jpg" alt="A photographer taking a picture" width="175" height="118"></a>
+                <a href="images/kayak.jpg"><img src="images/kayak.jpg" alt="A person kayaking into the sunset." width="175" height="118"></a>
+            </div>
+            <button onclick="startLightBox()">Light Box</button>
+
+            <form>
+                <p class="first"><b>Welcome to The Adventure Expeditions Website.</b></p>
+                <form action="subscribe.php" method="post">
+                    <p><b>Please enter your e-mail address to subscribe to our newsletter.</b></p>
+                    <p class="first field">
+                        <b>E-Mail:</b>
+                        <input type="text" name="email" id="email"
+                               title="Enter e-mail here.">
+                    </p>
+                    <p>
+                        <input type="submit" value="Subscribe" class="subscribe">
+                    </p>
+                </form>
+
+
+                <h1>Recent Articles</h1>
+                <article>
+                    <h2>Top 5 Most Popular National Parks</h2>
+                    <img src="images/smokeymountain.jpg" alt="A grassy hill under tall trees in the Great Smokey Mountains">
+                    <h3>Great Smokey Mountains</h3>
+                    <p>
+                        Ensconced at number one is Great Smoky Mountains National Park,
+                        which draws more than ten million visitors annually—about twice
+                        the number of the second most popular park. Most visitors see the
+                        park from a mountain-skimming scenic highway; many take to the more
+                        than 800 miles of hiking trails across<br> North Carolina and Tennessee.
+                    </p>
+                    <p>
+                        <a href="National_Parks.html" class="new_window">Read more.</a>&nbsp;
+                        <iframe width="520" height="315" src="https://www.youtube.com/embed/wbU9C5Nyks4" frameborder="0" allowfullscreen>Or play video.</iframe>
+                    </p>
+                </article>
+
+
+        </section>
+        <aside>
+            <h2>How to contact Adventure Expeditions</h2>
+
+            <ul>
+                <li><b>Phone number:</b></li>
+                <address>
+                    555-555-5555
+
+                    <li><b>Email address:</b></li>
+                    <a href="emailto:adventureexpeditions@gmail.com" id="new_window">adventureexpeditions@gmail.com</a>
+                </address>
+
+            </ul>
+
+        </aside>
+    </main>
+    <footer>
+        <p id="copyright" class="orange right">&copy; Copyright 2016 Adventure Expeditions Inc.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="lightbox.js"></script>
+    <script type="text/javascript" src="lightbox.min"></script>
+
+</body>
+</html>

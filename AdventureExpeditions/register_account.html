@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+		<meta name="description" content="A camping and backpacking website that provides information
+			about places to camp, equipment to use, and essential things to know about the outdoors">
+		<meta name="keywords" content="backpacking, hiking, outdoors, gear, equipment, nature, adventure,
+			expeditions, exercise, health">
+		
+		<link rel="shortcut icon" href="favicon3.ico"> 
+		<link rel="stylesheet" href="styles/normalize.css">
+		<link rel="stylesheet" href="styles/national.css">
+		<link rel="stylesheet" href="styles/gearlist.css">
+		<link rel="stylesheet" href="styles/aboutus.css">
+		<link rel="stylesheet" href="styles/employment.css">
+		<link rel="stylesheet" href="styles/summary.css">
+		<link rel="stylesheet" type="text/css" href="styles/main3.css">
+
+
+<title>Employee Application Summary</title>
+<style type="text/css">
+    @import "register.css";
+    dt {
+        font-weight: bold;
+    }
+</style>
+<script type="text/javascript">
+
+var decode = function ( text ) {
+    text = text.replace(/\+/g, " ");
+    text = text.replace(/%[a-fA-F0-9]{2}/g, 
+        function ( text ) {
+            return String.fromCharCode( "0x" + text.substr(1,2));
+        }
+    );
+    return text;
+}
+    
+var display_data = function () {
+    var query = location.search.replace("?", "");
+    if ( query == "" ) return;
+    
+    var fields = query.split("&");
+    
+    if ( fields.length == 0 ) {
+        document.write("<p>No data was submitted.</p>");
+    } else {
+        document.write("<dl>");
+        var field_parts;
+        for ( var i in fields ) {
+            field_parts = fields[i].split("=");
+            field_parts[0] = decode( field_parts[0] );
+            field_parts[1] = decode( field_parts[1] );
+            document.write("<dt>" + field_parts[0] + "</dt>");
+            document.write("<dd>" + field_parts[1] + "</dd>");
+        }
+        document.write("</dl>");
+    }
+}
+
+</script>
+</head>
+
+<body>
+	<header>
+			
+			<h1>Adventure Expeditions</h1> 
+			<h2><i>The Outdoor Adventure Starts Here</i></h2>
+			<blockquote><b>"In every walk with nature one receives far more than he seeks."</b></blockquote> 
+			<p>--John Muir (Explorer)</p>
+	</header>
+	
+	<nav id="mobilemenu"></nav>
+	<nav id="nav_menu">
+    	<ul>
+        	<li><a href="AdventureExpeditions3.html">Home</a></li>
+        	<li><a href="National_Parks.html">National Parks</a></li>
+        	<li><a href="GearList.html">Essential Gear</a></li>
+        	<li><a href="Travel_Agency.html">Travel Agency</a></li>
+        	<li><a href="aboutus.html">About Us</a>
+            	<ul>
+                	<li><a href="#">Who We Are</a></li>
+                	<li><a href="#">Sponsors</a></li>
+                	<li><a href="Employment.html">Employment</a></li>
+                	<li><a href="#">Contact Information</a></li>
+            	</ul>
+        	</li>
+    	</ul>
+	</nav>
+	<main>
+
+<div id="content">
+    <h1>Order Summary</h1>
+    <p>Your order has been submitted with the following
+    data:</p>
+    <script type="text/javascript">display_data();</script>
+	
+		
+	</main>
+	<footer>
+		<p id="copyright" class="orange right">&copy; Copyright 2016 Adventure Expeditions Inc.</p>
+	</footer>
+</body>
+</html>

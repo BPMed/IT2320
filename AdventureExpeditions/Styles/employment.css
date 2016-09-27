@@ -1,0 +1,43 @@
+/* the styles for the form */
+fieldset {
+    margin-bottom: .5em;
+    padding: .5em 1em;
+}
+.submit {
+	width: 6em;
+}
+.reset {
+	width: auto;
+}
+legend {
+    font-weight: bold;
+    font-size: 85%;
+    padding-bottom: .75em;
+	
+}
+label, input, select {
+	font-size: 90%;
+}
+label {
+    float: left;
+    width: 10em;
+    text-align: right;
+}
+input, select {
+    width: 15em;
+    margin-left: .5em;
+    margin-bottom: .5em;
+}
+input:required, input[required] input:invalid {
+	border: 2px solid #800000;
+}
+input:valid {
+	border: 1px solid black;
+}
+input:invalid {
+	box-shadow: none;
+}
+br {
+    clear: both;
+}
+

@@ -1,0 +1,62 @@
+main {
+	margin: 1em;
+	
+}
+
+main li {
+	padding-top: 2em;
+	font-weight: bold;
+	padding-bottom: .75em;
+	margin-top: 2em;
+}
+
+
+img {
+	border: 3px solid #6633cc;
+	margin: 1em;
+}
+
+.padding_canyon {
+	padding-bottom: .75em;
+	margin-top: 5em;
+	text-indent: 24.75em;
+}
+p {
+	margin-top: 1em;
+}
+.shift_smokey {
+	margin: auto;
+	margin-left: 1em;
+	padding-bottom: .75;
+	margin-top: .75em;
+	border: 3px solid #6633cc;
+}
+
+.shift_rocky {
+	margin-top: 8em;
+	padding-bottom: .75;
+}
+p{
+	margin-top: .45em;
+}
+.shift_yosemite {
+	margin-top: 7em;
+	text-indent: 25em;
+	padding-bottom: .75;
+}
+.shift_yellow {
+	margin-top: 7em;
+	padding-bottom: .75;
+}
+form {
+	
+	margin-top: 7em;
+	border-top: 3px solid #6633cc;
+	font-weight: bold;
+	
+	
+}
+.subscribe {
+	margin-left: 4.50em;
+	width: 8em;
+}
