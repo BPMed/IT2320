@@ -17,19 +17,12 @@ var today = new Date();
 document.write("Today`s date: ");
 document.write(today.toDateString());
 
-//Lightbox for the center 4 pictures.
-//This is currently not working correctly.
-function startLightBox(){
-	var lbBg = document.getElementById("lightBoxBg");
-	var lb = document.getElementById("lightBox");
-	
-	
-}
-
-function dismiss() {
-	var lbBg = document.getElementById("lightBoxBg");
-	var lb = document.getElementById("lightBox");
-	
-	lbBg.style.display = "none";
-	lb.style.display = "none";
+//Hides the center Pictures
+function myFunction() {
+    var x = document.getElementById('myDiv');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
 }

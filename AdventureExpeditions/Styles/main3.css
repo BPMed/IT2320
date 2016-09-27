@@ -114,32 +114,14 @@ section {
 	float: right;
 	padding: 0 2.5% 20px 2.5%;       
 }
+
 section img {
 	border: 2px solid #6633cc;
 	margin-top: 5px;
 	margin: auto;
-	
-}
-#lightBox {
-	position: center;
-	display: none;
-	
-}
-
-#lightBoxBg {
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	opacity: 0.5;
-	
-	background-color: black;
-	height: 100%;
-	width: 100%;
-	display: none;
-}
-today {
-	position: top;
-}
+	width: 175px;
+	height: 118px;
+} 
 
 
 section h1 {
